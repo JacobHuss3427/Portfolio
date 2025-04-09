@@ -16,9 +16,31 @@ h1, h2, h3, h4, h5, h6, span {
     line-height: 1.25;
 }
 
+h1 {
+    font-size: 36px;
+}
+
 p {
     line-height: 1.5;
     font-size: 16px;
+}
+
+.text-purple {
+    color: #6030b1;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* NAVIGATION BAR */
@@ -62,4 +84,74 @@ nav {
     color: #6030b1;
     margin: 0 12px;
     font-weight: 700;
+}
+
+/* ABOUT ME */
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.about-me__picture {
+    width: 72%;
+    height: 100%;
+    scale: 2;
+    padding-top: 20px;
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0.16);
+}
+
+.about-me__info--pg {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    padding: 0 16px;
+}
+
+.about-me__links {
+    display: flex;
+    margin-bottom: 34px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__img {
+    width: 100%;
 }
